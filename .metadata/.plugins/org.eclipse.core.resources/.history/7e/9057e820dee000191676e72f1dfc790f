@@ -1,0 +1,16 @@
+package com.demo2;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Mian {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("example.xml");
+		Point point=ctx.getBean("p1");
+		System.out.println(point);
+	
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.mapping.many2many;
+
+public class Emp {
+	
+	private int eid;
+	private String ename;
+
+}

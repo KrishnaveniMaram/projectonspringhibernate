@@ -1,0 +1,5 @@
+package com.boookapp.model.persistance;
+
+public class Book {
+
+}

@@ -1,0 +1,5 @@
+package com.custapp.dao;
+
+public interface CustomerDao {
+
+}

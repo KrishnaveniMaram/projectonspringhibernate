@@ -1,0 +1,22 @@
+package com.mapping.onezone;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="emp_Table")
+public class Emp {
+	@Id@GeneratedValue
+	private int eId;
+	private String name;
+	@OneToOne
+	private Parking parking;
+
+	
+	
+	
+	
+}

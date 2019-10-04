@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="c" class="com.demo5.Country">
+<property name="countryName" value="India"/>
+<property name="states" >
+
+<map>
+<entry key="andhra" value-ref="andhraDetails"></entry>
+<entry key="tn" value-ref="tamilnaduDetails"></entry>
+<entry key="Telangana" value-ref="telanganaDetails"></entry>
+
+</map>
+</property>
+
+
+
+
+
+
+
+
+</bean>
+</beans>

@@ -1,0 +1,26 @@
+package com.boookapp.web;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.boookapp.model.persistance.Book;
+import com.boookapp.model.service.BookService;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("books.xml");
+		//BookService bookService=(BookService) ctx.getBean("bookservice");
+		List<Book>books=bookService.getAllBooks();
+		/*for(Book book:books){
+			System.out.println(book);*/
+		}
+
+	}
+
+

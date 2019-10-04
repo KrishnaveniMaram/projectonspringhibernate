@@ -1,0 +1,10 @@
+package com.demo5;
+
+public class statesDetails {
+	
+	   private String stateName;
+	   private String stateCapital;
+	   private String statePopulation;
+	   private String language;
+	   private String bestTimeToVisit;
+}

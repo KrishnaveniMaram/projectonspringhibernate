@@ -1,0 +1,13 @@
+package com.mapping.many2many;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="project_table_m2m")
+public class Project {
+	pid;
+	pname;
+	pmgr;
+
+}

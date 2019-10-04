@@ -1,0 +1,10 @@
+package com.demo2;
+
+public class Traingle {
+	private Point pointA;
+	private Point pointB;
+	private Point pointc;
+	
+	
+
+}

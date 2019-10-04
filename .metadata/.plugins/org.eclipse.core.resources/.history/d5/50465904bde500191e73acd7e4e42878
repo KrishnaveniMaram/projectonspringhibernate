@@ -1,0 +1,5 @@
+package com.bookapp.model.persistance;
+
+public class BookDaoImpl2 {
+
+}

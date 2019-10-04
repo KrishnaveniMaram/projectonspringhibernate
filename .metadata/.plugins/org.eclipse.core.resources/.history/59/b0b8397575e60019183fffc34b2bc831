@@ -1,0 +1,19 @@
+package com.bookapp.web.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
+
+import com.bookapp.model.service.BookService;
+
+public class BookController {
+	
+	@Autowired
+	private BookService bookService;
+	public String getBooks(ModelMap map){
+		map.addAttribute("books", bookService.getAllBooks());
+		return "all_books";
+	}
+	
+	
+
+}

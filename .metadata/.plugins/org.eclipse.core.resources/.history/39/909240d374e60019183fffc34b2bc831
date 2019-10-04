@@ -1,0 +1,11 @@
+package com.bookapp.model.service;
+
+public class BookNotFoundException  extends Runtime{
+
+	public BookNotFoundException(String message) {
+		super(message);
+		
+	}
+	
+ 
+}

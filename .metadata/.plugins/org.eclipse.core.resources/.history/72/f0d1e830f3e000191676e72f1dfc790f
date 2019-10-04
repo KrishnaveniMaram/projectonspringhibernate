@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="c" class="com.demo5.Country">
+<property name="countryName" value="India"/>
+<property name="states" >
+
+<map>
+<entry key="andhra" value-ref="andhraDetails"></entry>
+<entry key="tn" value-ref="tamilnaduDetails"></entry>
+<entry key="telangana" value-ref="telanganaDetails"></entry>
+</map>
+</property>
+</bean>
+<bean id="andhraDetails" class="com.demo5.statesDetails">
+<property name="stateName" value="andhra"/>
+<property name="stateCapital" value="amaravathi"/> 
+<property name="statePopulation" value="5Cr"/>
+<property name="language" value="telugu"/>
+
+<property name="bestTimeToVisit" value="Feb-Mar"/>
+</bean>
+
+
+<bean id="tamilnaduDetails" class="com.demo5.statesDetails">
+<property name="stateName" value="tamilnadu"/>
+<property name="stateCapital" value="Chennai"/> 
+<property name="statePopulation" value="6Cr"/>
+<property name="language" value="tamil"/>
+
+<property name="bestTimeToVisit" value="Dec"/>
+</bean>
+
+<bean id="telanganaDetails" class="com.demo5.statesDetails">
+<property name=stateName value="Telangana"/>
+<property name="stateCapital" value="Hyderabad"/> 
+<property name="statePopulation" value="7Cr"/>
+<property name="language" value="telugu"/>
+
+<property name="bestTimeToVisit" value="Aug-Nov"/>
+</bean>
+
+
+
+
+</beans>

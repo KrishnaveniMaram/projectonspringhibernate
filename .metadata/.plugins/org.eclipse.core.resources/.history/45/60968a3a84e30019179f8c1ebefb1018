@@ -1,0 +1,15 @@
+package com.custapp.dao;
+
+public class CustomerdaoImpl implements CustomerDao{
+
+	public CustomerdaoImpl() {
+	
+	}
+
+	@Override
+	public void addCustomer(Customer customer) {
+	
+		
+	}
+
+}

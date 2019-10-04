@@ -1,0 +1,28 @@
+package com.ex1;
+
+import java.util.List;
+
+import com.demo2.Point;
+
+public class Figure {
+
+	private List<Point> points;
+	public void setPooints(List<Point> points){
+		this.points=points;
+	}
+	
+	public void printFigure()
+	{
+		for(Point point:points)
+			System.out.println(point);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

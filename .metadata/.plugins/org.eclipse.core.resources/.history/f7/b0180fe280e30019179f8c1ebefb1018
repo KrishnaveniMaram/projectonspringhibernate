@@ -1,0 +1,12 @@
+package com.custapp.dao;
+
+public class Customer {
+	
+	private String name;
+	private String address;
+	private String  email;
+	private String phone;
+	
+	
+
+}

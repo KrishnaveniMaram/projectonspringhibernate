@@ -1,0 +1,11 @@
+package com.custapp.dao;
+
+public class CustomerdaoImpl implements CustomerDao{
+
+	@Override
+	public void addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

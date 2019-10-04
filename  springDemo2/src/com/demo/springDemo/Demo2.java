@@ -1,0 +1,15 @@
+package com.demo.springDemo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ApplicationContext ctx=new ClassPathXmlApplicationContext("bean.xml");
+Passanger passanger=(Passanger) ctx.getBean("p");
+passanger.travel();
+	}
+
+}

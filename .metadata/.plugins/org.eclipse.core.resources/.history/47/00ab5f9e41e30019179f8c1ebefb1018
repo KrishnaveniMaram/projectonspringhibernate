@@ -1,0 +1,73 @@
+package com.boookapp.model.persistance;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Repository;
+
+import com.mysql.jdbc.Connection;
+@Primary
+@Repository
+public class BookDaoImplUsingJDBC implements BookDao{
+
+	
+	
+	private DataSource datasource;
+	
+	public BookDaoImplUsingJDBC(DataSource datasource) {
+		
+		this.datasource = datasource;
+	}
+
+	
+	
+	public BookDaoImplUsingJDBC() {
+		
+	}
+
+
+
+	@Override
+	public List<Book> getAllBooks() {
+		// TODO Auto-generated method stub
+		try
+		{
+		Connection connection= (Connection) datasource.getConnection();
+		System.out.println("connection done");
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	@Override
+	public Book addBook(Book book) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteBook(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateBook(int id, Book book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Book getBookById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+
+}

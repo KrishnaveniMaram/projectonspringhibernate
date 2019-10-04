@@ -1,0 +1,44 @@
+package com.demo;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="custimer_table")
+public class Customer {
+@Id
+
+	private int id;
+	
+	private String regno;
+	private String address;
+	private String phoneno;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getRegno() {
+		return regno;
+	}
+	public void setRegno(String regno) {
+		this.regno = regno;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getPhoneno() {
+		return phoneno;
+	}
+	public void setPhoneno(String phoneno) {
+		this.phoneno = phoneno;
+	}
+	
+	
+
+}

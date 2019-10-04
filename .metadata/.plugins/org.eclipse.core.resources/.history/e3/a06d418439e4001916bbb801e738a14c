@@ -1,0 +1,70 @@
+package com.mapping.onezone;
+
+import java.util.List;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.AnnotationConfiguration;
+
+import com.demo.Book;
+
+public class Main {
+	public static void main(String[] args) {
+		SessionFactory factory = new AnnotationConfiguration().configure().buildSessionFactory();
+		Session session1 = factory.openSession();
+		session1.getTransaction().begin();
+		List<Emp>emps=session1.createQuery("from Emp").list();
+		for(Emp e:emps){
+			System.out.println(e.getName()+":"+e.getParking().getLoc());
+		}
+		/*
+		Emp emp=new Emp();
+		emp.setName("kittu");
+		
+		Parking parking =new Parking();
+		parking.setLoc("A$5");
+		emp.setParking(parking);
+		
+		Emp emp1=new Emp();
+		emp1.setName("Area");
+		
+		Parking parking1 =new Parking();
+		parking1.setLoc("G&57");
+		emp1.setParking(parking1);
+		
+		Emp emp2=new Emp();
+		emp2.setName("AGSh");
+		
+		Parking parking2 =new Parking();
+		parking2.setLoc("H*$#");
+		emp2.setParking(parking2);
+		
+		Emp emp3=new Emp();
+		emp3.setName("Litya");
+		
+		Parking parking3 =new Parking();
+		parking3.setLoc("Q$5");
+		emp3.setParking(parking3);
+		
+		
+		session1.save(parking);
+		session1.save(emp);
+		
+		session1.save(parking1);
+		session1.save(emp1);
+		
+		session1.save(parking2);
+		session1.save(emp2);
+		
+		session1.save(parking3);
+		session1.save(emp3);
+		
+		
+		session1.getTransaction().commit();*/
+		session1.close();
+		factory.close();
+
+	}
+}

@@ -1,0 +1,60 @@
+package com.demo;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Table(name="customer_Table_3")
+public class MoreAnnotations {
+	@Id
+	@GeneratedValue
+ private int id;
+@Column(name="cust_table",nullable=false, unique=true, length=60)
+ private String regno;
+@Column(name="cust_add",nullable=false)
+ private String address;
+
+ private String mobileno;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getRegno() {
+	return regno;
+}
+public void setRegno(String regno) {
+	this.regno = regno;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+public String getMobileno() {
+	return mobileno;
+}
+public void setMobileno(String mobileno) {
+	this.mobileno = mobileno;
+}
+public MoreAnnotations(String regno, String address, String mobileno) {
+	super();
+	this.regno = regno;
+	this.address = address;
+	this.mobileno = mobileno;
+}
+public MoreAnnotations() {
+	
+}
+@Override
+public String toString() {
+	return "MoreAnnotations [id=" + id + ", regno=" + regno + ", address=" + address + ", mobileno=" + mobileno + "]";
+}
+	
+	
+	
+	
+}

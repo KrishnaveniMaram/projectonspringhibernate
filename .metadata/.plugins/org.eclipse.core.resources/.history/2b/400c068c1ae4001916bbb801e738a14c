@@ -1,0 +1,15 @@
+package com.demo;
+
+import javax.persistence.Table;
+
+@Table(name="customer_Table_3")
+public class MoreAnnotations {
+ private int id;
+ private String regno;
+ private String address;
+ private String mobileno;
+	
+	
+	
+	
+}

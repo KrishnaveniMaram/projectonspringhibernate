@@ -1,0 +1,24 @@
+package com.custapp.dao;
+
+
+
+public class CustomerdaoImpl implements CustomerDao{
+
+	public CustomerdaoImpl() {
+	factory=MySessionFactory.getSessionFactory();
+	}
+
+	@Override
+	public void addCustomer(Customer customer) {
+	Session session=factory.openSession();
+		Transaction tx=session.getTranscation();
+		try{
+			tx.begin();
+			session.save(customer);
+			tx.commit();
+		}catch(HibernateException e){
+			e.printStackTrace();
+		}
+	}
+
+}

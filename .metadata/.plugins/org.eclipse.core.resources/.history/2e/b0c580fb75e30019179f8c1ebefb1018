@@ -1,0 +1,13 @@
+package snippet;
+
+public class Snippet {
+	public Book(int id, String isbn, String title, String author, double price) {
+			super();
+			this.id = id;
+			this.isbn = isbn;
+			this.title = title;
+			this.author = author;
+			this.price = price;
+		}
+}
+

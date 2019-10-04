@@ -1,0 +1,19 @@
+package com.demo;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Table(name="customer_Table_3")
+public class MoreAnnotations {
+	@Id
+	@GeneratedValue
+ private int id;
+ private String regno;
+ private String address;
+ private String mobileno;
+	
+	
+	
+	
+}

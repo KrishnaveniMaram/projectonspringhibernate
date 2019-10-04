@@ -1,0 +1,5 @@
+package com.demo.ConstructorInjectionEx;
+
+public class Point {
+
+}

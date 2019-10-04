@@ -1,0 +1,14 @@
+package com.bookapp.model.persistance;
+
+import org.hibernate.SessionFactory;
+
+public class HibernateSessionFactory {
+	private static SessionFactory factory=new AnnotationConfiguration().configure().buildSessionFactory();
+	public HibernateSessionFactory(){
+		
+	}
+	
+public static SessionFactory getSessionFactory(){
+	return factory;
+}
+}

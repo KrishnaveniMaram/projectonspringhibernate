@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- setter injection
+ --> <bean id="p1" class="com.demo.Point">
+<property name="x" value="22"/>
+<property name="y" value="44"/>
+</bean>
+
+<!-- demo of P namespace
+ -->
+ <bean id="p3" class="com.demo2.Point" p:x="-5" p:y="44"/>
+<!-- demo of c namespace
+ -->
+ <bean id="p4" class="com.demo2.Point" c:x="-5" c:y="44"/>
+
+
+<!-- constructor parametr
+ -->
+<bean id="p2" class="com.demo2.Point">
+<constructor-arg name="x" value="33" type="int" index="0"/>
+<constructor-arg name="y" value="44" type="int" index="1"/>
+</bean>
+
+ 
+
+
+</beans>

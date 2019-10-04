@@ -1,0 +1,31 @@
+package com.mapping.onezone;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.AnnotationConfiguration;
+
+import com.demo.Book;
+
+public class Main {
+	public static void main(String[] args) {
+	SessionFactory factory=new AnnotationConfiguration().configure().buildSessionFactory();
+	Session  session =factory.openSession();
+		Transaction tx=session.getTransaction();
+		
+			tx.begin();
+			
+			session.save();
+		
+			tx.commit();
+			
+		
+			e.printStackTrace();
+			tx.rollback();
+		
+		session.close();
+		factory.close();
+
+}
+}

@@ -1,0 +1,11 @@
+package com.demo;
+
+public class Magician {
+	public void doMagic(){
+	
+		System.out.println("abra ka dabra");
+	}
+public void doEating(){
+		System.out.println("eating food");
+	}
+}

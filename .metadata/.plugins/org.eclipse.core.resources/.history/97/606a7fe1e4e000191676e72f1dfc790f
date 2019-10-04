@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean   id="fig" class="com.ex1.Figure">
+<property name="points">
+<list>
+<ref bean="p1"/>
+<ref bean="p1"/>
+<ref bean="p1"/>
+<ref bean="p1"/>
+</list>
+</property>
+</bean>
+
+<bean id="p1" class="com.demo2.Point">
+<property name="x" value="22"/>
+<property name="y" value="50"/>
+</bean>
+<bean id="p2" class="com.demo2.Point">
+<property name="x" value="88"/>
+<property name="y" value="100"/>
+</bean>
+<bean id="p3" class="com.demo2.Point">
+<property name="x" value="76"/>
+<property name="y" value="90"/>
+</bean><bean id="p4" class="com.demo2.Point">
+<property name="x" value="678"/>
+<property name="y" value="788"/>
+</bean>
+
+
+
+</beans>

@@ -1,0 +1,12 @@
+package com.demo;
+
+public class MoreAnnotations {
+ private int id;
+ private String regno;
+ private String address;
+ private String mobileno;
+	
+	
+	
+	
+}

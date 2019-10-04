@@ -1,0 +1,14 @@
+package com.demo;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+public class Audience {
+
+	public void clapping(){
+	@Before("execution(doMagic)")
+		System.out.println("wow..........");
+	}
+	
+}

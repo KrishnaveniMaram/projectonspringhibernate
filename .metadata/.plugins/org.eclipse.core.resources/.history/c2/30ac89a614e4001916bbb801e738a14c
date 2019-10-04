@@ -1,0 +1,57 @@
+package com.demo;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="customer_table")
+public class Customer {
+@Id
+
+  private CustomerPk  id;
+	private String regno;
+	private String address;
+	private String phoneno;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getRegno() {
+		return regno;
+	}
+	public void setRegno(String regno) {
+		this.regno = regno;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getPhoneno() {
+		return phoneno;
+	}
+	public void setPhoneno(String phoneno) {
+		this.phoneno = phoneno;
+	}
+	public Customer(int id, String regno, String address, String phoneno) {
+	
+		this.id = id;
+		this.regno = regno;
+		this.address = address;
+		this.phoneno = phoneno;
+	}
+	public Customer() {
+		
+	}
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", regno=" + regno + ", address=" + address + ", phoneno=" + phoneno + "]";
+	}
+	
+	
+
+}

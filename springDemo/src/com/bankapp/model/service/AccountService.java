@@ -1,0 +1,14 @@
+package com.bankapp.model.service;
+import com.bankapp.model.persistance.Account;
+import java.util.List;
+
+public interface AccountService {
+	
+	public List<Account>getAllAccounts();
+	public Account getAccount(int id);
+	public void transfer (int fromAccount ,int toAccount,int amount);
+	
+	public void deposit(int accountId,int amount);
+	public void withdraw(int accountId,int amount);
+
+}

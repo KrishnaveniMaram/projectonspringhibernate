@@ -1,0 +1,50 @@
+package com.boookapp.model.persistance;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+@Repository
+public class BookDaoImplUsingJDBC implements BookDao{
+
+	
+	
+	
+	public BookDaoImplUsingJDBC() {
+
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public List<Book> getAllBooks() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Book addBook(Book book) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteBook(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateBook(int id, Book book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Book getBookById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+
+}

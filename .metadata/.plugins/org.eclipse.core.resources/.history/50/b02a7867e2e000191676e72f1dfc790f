@@ -1,0 +1,14 @@
+package com.demo2;
+
+public class Traingle {
+	private Point pointA;
+	private Point pointB;
+	private Point pointC;
+	
+	public void printTriangle(){
+		System.out.println("pointA "+pointA);
+		System.out.println("pointB "+pointB);
+		System.out.println("pointc "+pointC);
+	}
+
+}
